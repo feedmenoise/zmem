@@ -85,7 +85,7 @@ class Generate {
 		$pdf->Content($number,$date,$redline,$adresat);
 		$pdf->Footer($director);
 		mysqli_close($connect);
-		$pdf->Output("../pdf/temp_contract.pdf","F");
+		$pdf->Output("/var/www/html/zmem/pdf/temp_contract.pdf","F");
 
 		$url = "http://".$_SERVER["HTTP_HOST"]."/zmem/pdf/temp_contract.pdf";
 

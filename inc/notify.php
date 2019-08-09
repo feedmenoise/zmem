@@ -116,7 +116,7 @@ function SendMail($connect, $message, $subject) {
 		$mail->setFrom('zmem@gigabit.zp.ua', 'Gigabit Contract Report');
 		$mail->addAddress($row["email"]);     
 		$mail->addReplyTo('feedme@gigabit.zp.ua', 'Information');
-		$mail->addAttachment('../pdf/temp_contract.pdf');
+		$mail->addAttachment('/var/www/html/zmem/pdf/temp_contract.pdf');
 
 		$mail->isHTML(true);                                  
 		$mail->Subject = $subject;
